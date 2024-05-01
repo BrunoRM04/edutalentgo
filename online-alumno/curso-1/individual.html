@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcuTalentGo | Alumno</title>
+    <link rel="shortcut icon" href="/img/banners/sticker.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="/public/css/styles.css">
+</head>
+
+<body>
+    <header> <!--HEADER-->
+        <img class="logo" src="/img/logotipos/logotipo con fondo.png" alt="Logo">
+        <button id="abrir" class="abrir-menu"><i class="bi bi-list"></i></button>
+        <nav class="nav" id="nav">
+            <button class="cerrar-menu" id="cerrar"><i class="bi bi-x"></i></button>
+            <ul class="nav-list">
+                <li><a href="/index.html">Inicio</a></li>
+                <li><a href="#en-online" class="smooth-scroll">Online</a></li>
+                <li><a href="#en-vivo" class="smooth-scroll">En Vivo</a></li>
+                <li><a href="#">Trabaja con nosotros</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </header> <!--HEADER-->
+    <main>
+        <div class="bienvenida-alumno"> <!--BIENVENIDA-->
+            <h2>¡Bienvenido alumn@ a tu curso!</h2>
+            <p>Aquí podrás encontrar todas las clases con sus respectivos temas.</p>
+            <div class="container-modulos">
+                <ul>
+                    <li id="modulo1" onclick="scrollToModule('modulo1')">Módulo 1</li>
+                    <li id="modulo2" onclick="scrollToModule('modulo2')">Módulo 2</li>
+                    <li id="modulo3" onclick="scrollToModule('modulo3')">Módulo 3</li>
+                </ul>
+            </div>
+            <div class="container-btn-extra">
+                <button class="btn-extra">Valorar Curso</button>
+                <button class="btn-extra">Consultar al Profesor</button>
+                <button class="btn-extra">Descargar Certificado</button>
+            </div>
+        </div> <!--BIENVENIDA-->
+        <div class="modulos" id="modulo1"> <!--MODULOS-->
+            <h3>Módulo 1</h3>
+            <ul class="tema-modulos">
+                <li>Tema 1<button class="ver-clase-btn">Ver clase</button></li>
+                <li>Tema 2 <button class="ver-clase-btn">Ver clase</button></li>
+                <li>Tema 3 <button class="ver-clase-btn">Ver clase</button></li>
+            </ul>
+        </div>
+        <div class="modulos" id="modulo2">
+            <h3>Módulo 2</h3>
+            <ul class="tema-modulos">
+                <li>Tema 1<button class="ver-clase-btn">Ver clase</button></li>
+                <li>Tema 2 <button class="ver-clase-btn">Ver clase</button></li>
+                <li>Tema 3 <button class="ver-clase-btn">Ver clase</button></li>
+            </ul>
+        </div>
+        <div class="modulos" id="modulo3">
+            <h3>Módulo 3</h3>
+            <ul class="tema-modulos">
+                <li>Tema 1<button class="ver-clase-btn">Ver clase</button></li>
+                <li>Tema 2 <button class="ver-clase-btn">Ver clase</button></li>
+                <li>Tema 3 <button class="ver-clase-btn">Ver clase</button></li>
+            </ul>
+        </div> <!--MODULOS-->
+    </main>
+    <footer class="footer"> <!--fOTTER-->
+        <div class="container-footer">
+            <p>© 2024 EduTalentGo. Todos los derechos reservados.</p>
+        </div>
+    </footer> <!--fOTTER-->
+    <script src="/public/js/script.js"></script>
+</body>
+
+</html>

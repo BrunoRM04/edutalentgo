@@ -1,0 +1,9 @@
+{
+    "usuarios": [
+        {
+            "username": "usuario1",
+            "password": "contraseña1",
+            "pagina": "/online-alumno/curso-1/individual.html"
+        }
+    ]
+}

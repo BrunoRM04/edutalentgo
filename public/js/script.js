@@ -25,6 +25,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 //SCROOLL A ID
 
+
 //OJO DE VER Y DESVER
 function togglePassword() {
     var passwordInput = document.getElementById("password");
@@ -39,3 +40,49 @@ function togglePassword() {
     }
 }
 //OJO DE VER Y DESVER
+
+
+//MODULOS ALUMNOS
+function scrollToModule(moduleId) {
+    var module = document.getElementById(moduleId);
+    module.scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+//MODULOS ALUMNOS
+
+//USUARIOS (INICIAR SESION)
+document.addEventListener("DOMContentLoaded", function() {
+    function togglePassword() {
+        var x = document.getElementById("password");
+        if (x.type === "password") {
+            x.type = "text";
+        } else {
+            x.type = "password";
+        }
+    }
+    
+    document.getElementById("login-form").addEventListener("submit", function(event) {
+        event.preventDefault(); // Evita que el formulario se envíe
+    
+        var username = document.getElementById("username").value;
+        var password = document.getElementById("password").value;
+    
+        // Hacer una solicitud para obtener el archivo JSON (puedes usar fetch o XMLHttpRequest)
+        fetch('usuarios.json')
+            .then(response => response.json())
+            .then(data => {
+                // Verificar las credenciales
+                var usuarioEncontrado = data.usuarios.find(function(usuario) {
+                    return usuario.username === username && usuario.password === password;
+                });
+    
+                if (usuarioEncontrado) {
+                    // Redirigir al usuario a la página correspondiente
+                    window.location.href = usuarioEncontrado.pagina;
+                } else {
+                    alert("Usuario o contraseña incorrectos");
+                }
+            })
+            .catch(error => console.error('Error:', error));
+    });
+});
+//USUARIOS (INICIAR SESION)

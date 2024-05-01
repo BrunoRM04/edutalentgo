@@ -157,7 +157,6 @@ header {
         animation-name: slideOutRight;
     }
 }
-
 /*header*/
 
 /*bienvenida*/
@@ -433,7 +432,6 @@ header {
     width: 40px;
     height: auto;
 }
-
 /*burbuja*/
 
 
@@ -451,7 +449,6 @@ header {
     width: 80%;
     margin: 0 auto;
 }
-
 /*footer*/
 
 
@@ -628,3 +625,141 @@ input:hover {
     }
 }
 /*curso individual (no pago)*/
+
+/*curso individual (pago alumno)*/
+
+.bienvenida-alumno {
+    background-color: #6584A6;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+.bienvenida-alumno h2 {
+    margin-top: 0;
+    font-size: 45px;
+    font-weight: 900;
+}
+
+.bienvenida-alumno p {
+    margin-bottom: 0;
+    font-size: 20px;
+}
+
+.container-modulos {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.container-modulos ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.container-modulos ul li {
+    cursor: pointer;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.container-modulos ul li:hover {
+    background-color: white;
+    color: #6584A6;
+}
+
+.container-btn-extra {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.container-btn-extra .btn-extra {
+    background-color: #6584A6;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    margin: 0 10px;
+}
+
+.container-btn-extra .btn-extra:hover {
+    background-color: white;
+    color: #6584A6;
+}
+
+.modulos {
+    margin-top: 20px;
+    margin: 50px;
+}
+
+.modulos h3 {
+    color: #6584A6;
+    margin-bottom: 10px;
+    font-size: 24px; 
+}
+
+.tema-modulos {
+    list-style: none;
+    padding: 0;
+}
+
+.tema-modulos li {
+    margin-bottom: 15px; 
+    padding: 10px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    display: flex; 
+    align-items: center;
+}
+
+.tema-modulos li button {
+    margin-left: auto;
+    background-color: #6584A6; 
+    border: none;
+    color: white;
+    cursor: pointer;
+    padding: 8px 16px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    min-width: 100px;
+}
+
+.tema-modulos li button:hover {
+    background-color: #4b688b;
+}
+@media screen and (max-width: 768px) {
+    .bienvenida-alumno h2 {
+        font-size: 36px;
+    }
+
+    .bienvenida-alumno p {
+        font-size: 16px;
+    }
+
+    .container-modulos ul li {
+        padding: 8px 16px;
+    }
+
+    .container-btn-extra .btn-extra {
+        padding: 8px 10px;
+        font-size: 14px;
+    }
+
+    .modulos h3 {
+        font-size: 20px; 
+    }
+
+    .tema-modulos li button {
+        padding: 6px 12px;
+        font-size: 14px;
+    }
+}
+/*curso individual (pago alumno)*/
