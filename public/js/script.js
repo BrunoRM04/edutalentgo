@@ -61,22 +61,20 @@ document.addEventListener("DOMContentLoaded", function() {
     }
     
     document.getElementById("login-form").addEventListener("submit", function(event) {
-        event.preventDefault(); // Evita que el formulario se envíe
+        event.preventDefault(); 
     
         var username = document.getElementById("username").value;
         var password = document.getElementById("password").value;
     
-        // Hacer una solicitud para obtener el archivo JSON (puedes usar fetch o XMLHttpRequest)
-        fetch('usuarios.json')
+
+        fetch('./json/usuarios.json')
             .then(response => response.json())
             .then(data => {
-                // Verificar las credenciales
                 var usuarioEncontrado = data.usuarios.find(function(usuario) {
                     return usuario.username === username && usuario.password === password;
                 });
     
                 if (usuarioEncontrado) {
-                    // Redirigir al usuario a la página correspondiente
                     window.location.href = usuarioEncontrado.pagina;
                 } else {
                     alert("Usuario o contraseña incorrectos");

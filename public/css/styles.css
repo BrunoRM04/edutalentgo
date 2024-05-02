@@ -763,3 +763,39 @@ input:hover {
     }
 }
 /*curso individual (pago alumno)*/
+
+.not-found {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.content-notfound {
+    text-align: center;
+}
+
+.content-notfound h1 {
+    font-size: 8em;
+    margin: 0;
+    color: #6584A6;
+}
+
+.content-notfound p {
+    font-size: 1.5em;
+    margin: 20px 0;
+}
+
+.content-notfound a {
+    text-decoration: none;
+    color: white;
+    background-color: #6584A6; 
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.content-notfound a:hover {
+    background-color: white;
+    color: #6584A6;
+}
