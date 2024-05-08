@@ -18,7 +18,7 @@
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="#en-online" class="smooth-scroll">Online</a></li>
                 <li><a href="#en-vivo" class="smooth-scroll">En Vivo</a></li>
-                <li><a href="#">Trabaja con nosotros</a></li>
+                <li><a href="https://forms.gle/qWyDgxvqeqbpjTCz9" target="_blank">Trabaja con nosotros</a></li>
                 <li><a href="contacto.html">Contacto</a></li>
             </ul>
         </nav>
@@ -28,7 +28,7 @@
             <div>
                 <h1>LOS MEJORES CURSOS ONLINE PARA QUE SIGAS <span style="font-weight: 800;">ESCALANDO EN TU EDUCACIÓN</span></h1>
                 <p>Estudia desde tu casa y a tu ritmo los mejores cursos del momento sobre cualquier tema de tu interés</p>
-                <a href=""><button class="boton-bienvenida">Trabajar con nosotros</button></a>
+                <a href="https://forms.gle/qWyDgxvqeqbpjTCz9" target="_blank"><button class="boton-bienvenida">Trabajar con nosotros</button></a>
                 <a href="login.html"><button class="boton-bienvenida">Ingresar a plataforma</button></a>
             </div>
         </section> <!--BIENVENIDA-->
@@ -46,10 +46,14 @@
                 </div>
             </div>
         </section> <!--EMPRESAS-->
-        <div class="cursos-vistos" id="en-online">
+        <div class="search-container"> <!--BUSCADOR-->
+            <input type="text" id="searchInput" class="search-box" placeholder="Buscar curso...">
+            <button onclick="search()" class="search-btn">Buscar</button>
+        </div>  <!--BUSCADOR-->
+        <!--ONLINE <div class="cursos-vistos" id="en-online">
             <h2 style="margin-top: 50px;">LOS CURSOS ONLINE MÁS VISTOS</h2>
         </div>
-        <div class="container-cursos"> <!--ONLINE-->
+        <div class="container-cursos"> 
             <div class="card-cursos">
                 <img src="./img/cursos/herramientas-y-recursos-para-crear-curso-online.png" alt="Curso 1">
                 <h3 class="title-cursos">Introducción a Adobe Illustrator</h3>
@@ -94,54 +98,43 @@
                 </div>
                 <a href="#" class="buy-btn-cursos">SABER MÁS</a>
             </div>
-        </div> <!--ONLINE-->
+        </div> ONLINE-->
         <div class="cursos-vistos" id="en-vivo">
             <h2 style="margin-top: 50px;">LOS CURSOS EN VIVO DEL MOMENTO</h2>
         </div>
         <div class="container-cursos"> <!--EN VIVO-->
             <div class="card-cursos">
-                <img src="./img/cursos/herramientas-y-recursos-para-crear-curso-online.png" alt="Curso 1">
-                <h3 class="title-cursos">Introducción a Adobe Illustrator</h3>
-                <p class="description-cursos">Un curso de Aarón Martínez</p>
-                <p style="color: grey;" class="description-cursos">Aprende Adobe Illustrator sin conocimientos previos para crear gráficos...</p>
+                <img src="./img/cursos/diseño deportivo.jpg" alt="Curso 1">
+                <h3 class="title-cursos">DISEÑO DEPORTIVO</h3>
+                <p class="description-cursos">Un curso de EcuTalentGo</p>
+                <p style="color: grey;" class="description-cursos">Conviértete en un diseñador senior en el ámbito...</p>
                 <div class="price-cursos">
-                    <p class="original-price-cursos">Precio original: $2.000UYU</p>
-                    <p class="final-price-cursos">$220UYU</p>
+                    <p class="original-price-cursos">Precio original: $60</p>
+                    <p class="final-price-cursos">DESCUENTO DISPONIBLE</p>
                 </div>
-                <a href="#" class="buy-btn-cursos">SABER MÁS</a>
+                <a href="./en vivo/diseñodeportivo.html" class="buy-btn-cursos">SABER MÁS</a>
             </div>
             <div class="card-cursos">
-                <img src="./img/cursos/herramientas-y-recursos-para-crear-curso-online.png" alt="Curso 1">
-                <h3 class="title-cursos">Introducción a Adobe Illustrator</h3>
-                <p class="description-cursos">Un curso de Aarón Martínez</p>
-                <p style="color: grey;" class="description-cursos">Aprende Adobe Illustrator sin conocimientos previos para crear gráficos...</p>
+                <img src="./img/cursos/creacion de marca en photoshop.jpg" alt="Curso 1">
+                <h3 class="title-cursos">CREACIÓN DE MARCA</h3>
+                <p class="description-cursos">Un curso de EcuTalentGo</p>
+                <p style="color: grey;" class="description-cursos">Serás un profesional en crear marcas de todo...</p>
                 <div class="price-cursos">
-                    <p class="original-price-cursos">Precio original: $2.000UYU</p>
-                    <p class="final-price-cursos">$220UYU</p>
+                    <p class="original-price-cursos">Precio original: $60</p>
+                    <p class="final-price-cursos">DESCUENTO DISPONIBLE</p>
                 </div>
-                <a href="#" class="buy-btn-cursos">SABER MÁS</a>
+                <a href="./en vivo/creaciondemarca.html" class="buy-btn-cursos">SABER MÁS</a>
             </div>
             <div class="card-cursos">
-                <img src="./img/cursos/herramientas-y-recursos-para-crear-curso-online.png" alt="Curso 1">
-                <h3 class="title-cursos">Introducción a Adobe Illustrator</h3>
-                <p class="description-cursos">Un curso de Aarón Martínez</p>
-                <p style="color: grey;" class="description-cursos">Aprende Adobe Illustrator sin conocimientos previos para crear gráficos...</p>
+                <img src="./img/cursos/diseño ui.jpg" alt="Curso 1">
+                <h3 class="title-cursos">DISEÑO DE INTERFAZ (UI)</h3>
+                <p class="description-cursos">Un curso de EcuTalentGo</p>
+                <p style="color: grey;" class="description-cursos">Se un profesional a la hora de crear interfaces...</p>
                 <div class="price-cursos">
-                    <p class="original-price-cursos">Precio original: $2.000UYU</p>
-                    <p class="final-price-cursos">$220UYU</p>
+                    <p class="original-price-cursos">Precio original: $60</p>
+                    <p class="final-price-cursos">DESCUENTO DISPONIBLE</p>
                 </div>
-                <a href="#" class="buy-btn-cursos">SABER MÁS</a>
-            </div>
-            <div class="card-cursos">
-                <img src="./img/cursos/herramientas-y-recursos-para-crear-curso-online.png" alt="Curso 1">
-                <h3 class="title-cursos">Introducción a Adobe Illustrator</h3>
-                <p class="description-cursos">Un curso de Aarón Martínez</p>
-                <p style="color: grey;" class="description-cursos">Aprende Adobe Illustrator sin conocimientos previos para crear gráficos...</p>
-                <div class="price-cursos">
-                    <p class="original-price-cursos">Precio original: $2.000UYU</p>
-                    <p class="final-price-cursos">$220UYU</p>
-                </div>
-                <a href="#" class="buy-btn-cursos">SABER MÁS</a>
+                <a href="./en vivo/diseñoui.html" class="buy-btn-cursos">SABER MÁS</a>
             </div>
         </div> <!--EN VIVO-->
         <div class="whatsapp-bubble"> <!--BURBUJA-->

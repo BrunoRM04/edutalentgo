@@ -319,7 +319,6 @@ header {
 }
 
 .card-cursos {
-    border: 1px solid #6584A6;
     padding: 20px;
     margin: 20px;
     width: 350px;
@@ -492,6 +491,7 @@ header {
         width: 40px;
         margin: 3px;
     }
+    
 }
 /*footer*/
 
@@ -808,6 +808,7 @@ input:hover {
 }
 /*curso individual (pago alumno)*/
 
+/*notfound*/
 .not-found {
     display: flex;
     justify-content: center;
@@ -843,3 +844,41 @@ input:hover {
     background-color: white;
     color: #6584A6;
 }
+/*notfound*/
+
+
+/*buscador*/
+.search-container {
+    text-align: center;
+}
+.search-box {
+    padding: 10px 20px;
+    border: 2px solid #6584A6;
+    width: 300px;
+    max-width: 80%;
+    font-size: 16px;
+    outline: none;
+}
+.search-btn {
+    background-color: #6584A6;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.search-btn:hover {
+    background-color: #6584A6;
+}
+@media only screen and (max-width: 600px) {
+    .search-box {
+        width: 80%;
+        max-width: 100%;
+    }
+    .search-btn {
+        margin-left: 0;
+        margin-top: 10px;
+        padding: 10px 15px;
+    }
+}
+/*buscador*/
